@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import JSXButton from './JSXButton';
 
 defineProps<{ msg: string }>();
 
@@ -7,6 +8,8 @@ const count = ref(0);
 </script>
 
 <template>
+    <JSXButton></JSXButton>
+
     <h1>{{ msg }}</h1>
 
     <div class="card">
